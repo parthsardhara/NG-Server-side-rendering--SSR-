@@ -9,7 +9,9 @@ const routes: Routes = [
     { path: '**', redirectTo: '/' },
 ];
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes, {
+    initialNavigation: 'enabled'
+})],
     exports: [RouterModule]
 })
 
